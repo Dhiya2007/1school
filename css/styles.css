@@ -593,3 +593,14 @@ body.dark .Services-container .Services-box{
   width: 100%;
   top: 0;
 }
+.gifd{
+  width: 100%;
+  display: none;
+}
+body.dark .gifd{
+  display: block;
+  width: 100%;
+}
+body.dark .gif{
+  display: none;
+}
