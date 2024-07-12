@@ -77,13 +77,13 @@
     </nav>
 <section class="toptop">
    <img class="gif" src="photo/8.gif">
-  <div class="card">
+  <div class="card top">
         <img src="photo/school_image.jpg" alt="ثانوية أبي حامد الغزالي" class="school-image">
         <div class="card-description">
-      <p class="head-fontB ">
+      <p class="head-fontB kalam-bold">
         WELCOME TO
         <br>
-        <span>
+        <span class="kalam-regular">
       Abi Hamed Elghazali</span></p>
   </div>
   </div>
@@ -93,7 +93,7 @@
 <br>
   <div class="Services-container">
 
-    <div class="Services-box">
+    <div class="Services-box right">
 
       <i class='bx bxs-phone-call' ></i>
       <h3 class="dr">صفحة التواصل</h3>
@@ -105,7 +105,7 @@
   
   
   
-    <div class="Services-box">
+    <div class="Services-box left">
 <i class='bx bxs-school' ></i>
       <h3>صفحة الاخبار</h3>
       <p>هنا تجد اخر اخبار الرسمية للمؤسسة
@@ -116,7 +116,7 @@
   
   
   
-    <div class="Services-box">
+    <div class="Services-box right">
 <i class='bx bx-calendar-event' ></i>
       <h3>صفحة جداول الإختبارات</h3>
       <p>ستجد في هاته الصفحة جميع جداول الإختبارات لكل سنوات    </p>
@@ -124,7 +124,7 @@
     </div>
   
   
-    <div class="Services-box">
+    <div class="Services-box left">
      <i class='bx bxs-book-bookmark' ></i>
       <h3>Dyaa Exam</h3>
       <p>موقع ستجد فيه  اغلبيت الاختبارات مع التصحيح لجميع السنوات </p>
@@ -199,7 +199,8 @@
 
 
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 <script>
   /*==================== scroll reveal ====================*/
 
@@ -214,9 +215,9 @@ ScrollReveal({
   
   ScrollReveal().reveal('.gulzar-regular, .top', { origin: 'top' });
   
-  ScrollReveal().reveal('', { origin: 'bottom' });
-  ScrollReveal().reveal(' .harmattan-bold, .Services-box', { origin: 'left' });
-  ScrollReveal().reveal('', { origin: 'bottom' });
+ 
+  ScrollReveal().reveal(' .harmattan-bold,  .left', { origin: 'left' });
+  ScrollReveal().reveal('.bottom', { origin: 'bottom' });
   ScrollReveal().reveal('.right', { origin: 'right' });
 
 </script>
