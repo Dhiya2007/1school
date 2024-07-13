@@ -640,3 +640,7 @@ body.dark .dark-light {
 .bx-sun{
   color: #8848c3 !important;
 }
+
+.gif-footer{
+  width: 100%;
+}
