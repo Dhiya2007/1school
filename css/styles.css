@@ -144,19 +144,23 @@ nav .nav-bar .logo a{
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle{
-    height: 40px;
+    height: 40px ;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 5px;
 }
-
+.ser{
+      right: -1rem;
+    top: -10px;
+}
 .dark-light i,
 .searchToggle i{
     position: absolute;
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 30px;
+
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -603,4 +607,36 @@ body.dark .gifd{
 }
 body.dark .gif{
   display: none;
+}
+body.dark .dark-light {
+  background-color: #fff !important;
+}
+.dark-light {
+    position: fixed;
+    bottom: 20px;    
+    right: 10px;
+    z-index: 1000; 
+   width: 60px !important;
+    height: 60px !important;
+    background-color: #000000b7 !important;
+    border-radius: 50% !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* إضافة ظل */
+    cursor: pointer !important;
+}
+
+.dark-light i {
+    font-size: 24px !important;
+    cursor: pointer;
+    font-size: 35px !important;  
+    margin: 0 5px; 
+}
+
+.bx-moon{
+  color: #0ef !important;
+}
+.bx-sun{
+  color: #8848c3 !important;
 }
