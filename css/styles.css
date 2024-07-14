@@ -17,6 +17,7 @@
 
 /* ===== Colours ===== */
 :root{
+  --col-deepblue:#5e60ce;
     --body-color: #E4E9F7;
     --nav-color: #4070F4;
     --side-nav: #010718;
@@ -263,15 +264,75 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 @media screen and (min-width: 768px) {
-  .card{
-     margin: 0 20rem 1rem 0;
-  }
+.school-image{
+  width: 70%;
+}
+body{
+  overflow-x: hidden;
+}
+body.dark .fixed{
+  margin-top: 20%;
+  margin: 4rem 10%;
+  
+}
+.fixed{
+  margin-top: 20%;
+  margin: 4rem 10%;
+}
+ .gif, .gifd{
+   display: none !important;
+ }
+ 
+ 
+ 
+ .gif-pc{
+   width: 74%;
+   margin: 10px 15%;
+ }
+ 
+ body.dark .gif-pc{
+   display: none !important;
+ }
+ body.dark .gif-black{
+   display: block;
+   width: 74%;
+   margin: 10px 15%;
+ }
+ .gif-black{
+   display: none;
+ }
+ 
+ 
+ 
+ 
+ 
+ .pc{
+  height: 100vh;
+    background-color: #fff;
+}
+body.dark .pc{
+  height: 100vh;
+    background-color: #414045;
+}
+
 }
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
     }
-
+.gif-pc, .gif-black{
+  display: none;
+}
+.card{
+    margin-bottom: 20px;
+  margin-top: -.5rem;
+   margin: 0 1rem 1rem;
+}
+body.dark .card{
+    margin-bottom: 20px;
+  margin-top: -.5rem;
+   margin: 0 1rem 1rem;
+}
     .menu{
         position: fixed;
         height: 100%;
@@ -346,9 +407,7 @@ body.dark .head-fontB{
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(10, 10, 10, 0.7);
-  margin-bottom: 20px;
-  margin: 0 1rem 1rem;
-  margin-top: -.5rem;
+
 }
 body.dark .card{
    color: #dbdbdb;
@@ -361,9 +420,7 @@ body.dark .card{
  background-color:#363942;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(10, 10, 10, 0.7);
-  margin-bottom: 20px;
-  margin: 0 1rem 1rem;
-   margin-top: -.4rem;
+
 }
 .card2{
    color: #000;
@@ -504,13 +561,100 @@ body.dark .harmattan-bold span{
 
 
 /*---- help full ----*/
-.footer{
-  color: #fff;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom:0 ;
-  background: #000;
+.a {
+  font-size: 2rem;
+  color:#0000;
+  text-decoration:none;
 }
+.p{
+  font-size: 1.3rem;
+}
+footer {
+  width:100vw;
+  position:block;
+  margin-bottom:-1rem;
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  text-align:center;
+}
+svg {
+  width:100%;
+  overflow:visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #4478e3;
+}
+.drop {
+  fill: var(--col-deepblue);
+  xfill: #99000055;
+  animation: drop 3.2s linear infinite normal;
+  stroke: var(--col-deepblue);
+  stroke-width:0.5;
+  transform: translateY(25px) ;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.drop1 {
+  
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+    filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px); 
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1); 
+  }
+  70% {
+    transform: translateY(25px); 
+  }
+  100% { 
+    transform: translateY(-10px) scale(.1);  
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
 
 /*---- font ----*/
 .gulzar-regular {
@@ -580,7 +724,8 @@ body.dark .Services-container .Services-box{
    
 .underline {
   text-decoration-line: underline;
-  color: #8848c3;
+  color: #0ef;
+  
 }
 .fps{
   height: 100vh;
@@ -643,4 +788,8 @@ body.dark .dark-light {
 
 .gif-footer{
   width: 100%;
+}
+.blue{
+  padding: 0 0 1.4rem;
+  background-color: #4578e3;
 }
